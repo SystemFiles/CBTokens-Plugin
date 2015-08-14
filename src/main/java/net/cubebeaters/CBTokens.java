@@ -774,11 +774,11 @@ public class CBTokens extends JavaPlugin implements Listener {
     public void createOptionMenu() {
 
         if (enableMoney) {
-            createMenuItem(Material.GOLD_INGOT, storeMenu, 3, ChatColor.AQUA + "Money Shop", ChatColor.GREEN + "Purchase In-Game Currency Here.");
+            createMenuItem(Material.GOLD_INGOT, storeMenu, 1, ChatColor.AQUA + "Money Shop", ChatColor.GREEN + "Purchase In-Game Currency Here.");
         }
 
         if (enablePerms) {
-            createMenuItem(Material.DIAMOND, storeMenu, 4, ChatColor.AQUA + "Rank Shop", ChatColor.GREEN + "Purchase Ranks here.");
+            createMenuItem(Material.DIAMOND, storeMenu, 3, ChatColor.AQUA + "Rank Shop", ChatColor.GREEN + "Purchase Ranks here.");
         }
 
         if (enableExp) {
@@ -786,7 +786,7 @@ public class CBTokens extends JavaPlugin implements Listener {
         }
 
         if (customPerms) {
-            createMenuItem(Material.FEATHER, storeMenu, 6, ChatColor.AQUA + "Abilities Shop", ChatColor.GREEN + "Purchase In-Game Abilities here.");
+            createMenuItem(Material.FEATHER, storeMenu, 7, ChatColor.AQUA + "Abilities Shop", ChatColor.GREEN + "Purchase In-Game Abilities here.");
         }
 
         // Create Exit Button
@@ -834,13 +834,13 @@ public class CBTokens extends JavaPlugin implements Listener {
      */
     public void createRankMenu() {
         // Create store item 1
-        createMenuItem(Material.COAL_ORE, rankMenu, 0, ChatColor.AQUA + "Rank: COPPER", ChatColor.GREEN + "This rank costs: " + this.getConfig().getInt("RankCost.rank1") + " Tokens");
+        createMenuItem(Material.COAL_ORE, rankMenu, 1, ChatColor.AQUA + "Rank: COPPER", ChatColor.GREEN + "This rank costs: " + this.getConfig().getInt("RankCost.rank1") + " Tokens");
         // Create store item 2
-        createMenuItem(Material.IRON_ORE, rankMenu, 1, ChatColor.AQUA + "Rank: STEEL", ChatColor.GREEN + "This rank costs: " + this.getConfig().getInt("RankCost.rank2") + " Tokens");
+        createMenuItem(Material.IRON_ORE, rankMenu, 3, ChatColor.AQUA + "Rank: STEEL", ChatColor.GREEN + "This rank costs: " + this.getConfig().getInt("RankCost.rank2") + " Tokens");
         // Create store item 3
-        createMenuItem(Material.GOLD_ORE, rankMenu, 2, ChatColor.AQUA + "Rank: GOLD", ChatColor.GREEN + "This rank costs: " + this.getConfig().getInt("RankCost.rank3") + " Tokens!");
+        createMenuItem(Material.GOLD_ORE, rankMenu, 5, ChatColor.AQUA + "Rank: GOLD", ChatColor.GREEN + "This rank costs: " + this.getConfig().getInt("RankCost.rank3") + " Tokens!");
         // Create store item 4
-        createMenuItem(Material.DIAMOND_BLOCK, rankMenu, 3, ChatColor.AQUA + "Rank: DIAMOND", ChatColor.GREEN + "This rank costs: " + this.getConfig().getInt("RankCost.rank4") + " Tokens!!");
+        createMenuItem(Material.DIAMOND_BLOCK, rankMenu, 7, ChatColor.AQUA + "Rank: DIAMOND", ChatColor.GREEN + "This rank costs: " + this.getConfig().getInt("RankCost.rank4") + " Tokens!!");
         // Create Exit Item
         createMenuItem(Material.ENDER_CHEST, rankMenu, 17, ChatColor.GOLD + "Exit", ChatColor.GRAY + "Return to the main menu");
     }
