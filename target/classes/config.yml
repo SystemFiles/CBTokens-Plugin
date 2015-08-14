@@ -164,4 +164,4 @@ Abilities:
     ability9:
         name: FlySpeed
         cost: 10
-        perm: essentials.speed.fly
+        perm: essentials.speed
