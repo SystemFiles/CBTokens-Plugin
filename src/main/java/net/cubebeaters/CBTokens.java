@@ -201,7 +201,7 @@ public class CBTokens extends JavaPlugin implements Listener {
             getLogger().log(Level.INFO, "{0}SQL Configuration loaded. Connecting...", ChatColor.YELLOW);
             try { // Connect to SQL DB while catching possible errors.
                 openConnection();
-                statement = con.createStatement();
+                statement = con.createStatement(); // Do not use this.
             } catch (SQLException ex) {
                 getLogger().log(Level.INFO, "{0}ERROR: SQL Connection", ChatColor.RED);
             } catch (ClassNotFoundException ex) {
