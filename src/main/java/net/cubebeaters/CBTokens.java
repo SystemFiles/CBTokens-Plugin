@@ -69,7 +69,7 @@ import org.bukkit.scheduler.BukkitRunnable;
  * in addition to redeeming for money.
  *
  * @author Systemx86
- * @version 3.1.5
+ * @version 3.1.7
  */
 public class CBTokens extends JavaPlugin implements Listener {
 
