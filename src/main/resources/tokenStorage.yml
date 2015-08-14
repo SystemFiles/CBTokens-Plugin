@@ -1,0 +1,8 @@
+
+
+# Token Storage Data file #
+# This file contains all the players by UUID on your server with their respective Token amounts.
+# This file will store data like the example below.
+# A players Username will not be valid here. You need to get the players UniqueID then place it in here manually if the plugin does not do it for you.
+
+067e6162-3b6f-4ae2-a171-2470b63dff00: 20

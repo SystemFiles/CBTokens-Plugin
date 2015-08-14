@@ -1,0 +1,167 @@
+                  # Configuration File for CBTokens #
+
+##############################################################################
+#                                                                            #
+#   This plugin was developed for specific use on the CubeBeaters server by: #
+#     - Mitch90509 (Testing/Concept/Planning)                                #
+#     - Systemx86 (Programming)                                              #
+#   If you are experiencing some customization issues please                 #
+#   let me know what you would like to be customizable, so that I can        #
+#   add it to this plugin allowing more people to use it for their servers.  #
+#                                                                            #
+##############################################################################
+
+###################################################################
+# !! SQL IS NOT FINISHED YET SO DO NOT ENABLE THIS SETTING YET !! #
+# !!      ENABLING THIS OPTION WILL RESULT IN FATAL ERRORS     !! #
+###################################################################
+
+# SQL Information is used to store tokens for each player
+# Enabled - When True, plugin will use SQL database for storage. When false, the plugin will default to flatfile storage.
+# Host - The IP address of your hosting provider for SQL.
+# Port - The port of which to connect to Host with.
+# dbName - The name of the database to create and token values in.
+# username - Admin username for SQL database.
+# password - Cooresponding password for above user.
+SQL-Info:
+    Enabled: false
+    Host: localhost
+    Port: 3306
+    dbName: TOKEN_STORAGE
+    Username: admin
+    Password: pass
+
+# Token worth for each clickable slot.
+# Token worth can not be a negative number as this would result in players losing money when redeeming their Tokens.
+# The values given are the default working values used by the CubeBeaters community server.
+Token-Worth:
+    one: 500
+    ten: 5500
+    twenty-five: 15000
+    fifty: 32500
+    seventy-five: 52500
+    one-hundred: 75000
+    two-hundred: 160000
+    five-hundred: 425000
+    one-thousand: 900000
+
+# EXTRA SETTINGS
+# EnablePerms - Allows the ability to purchase permissions/ranks with Tokens
+# EnableExpShop - Allows the puchase of Exp Levels from the Token Shop
+# EnableMoney - Allows the Conversion of Tokens to in-game currency.
+# CustomPerms - Allows the purchase of Abilities such as, speed and fly.
+ExtraSettings:
+    EnablePerms: true
+    EnableExpShop: true
+    EnableMoney: true
+    customPerms: true
+
+# Rank Cost is the cost to purchase a rank using Tokens that you receive daily.
+# rank1 - is the lowest rank available which will take approx 25 days to get for a person just starting out on the server.
+# rank2 - The middle rank costing 50 by default this should take quite a while to save up for.
+# rank3 - This is the second best donator rank and should take a very long time to obtain.
+# rank4 - This is the best donator rank and should require an extensive amount of play time to obtain.
+RankCost:
+    rank1: 30
+    rank2: 50
+    rank3: 100
+    rank4: 200
+# The rank to give the player when they purchase with tokens.
+RankToGive:
+    rank1: Copper
+    rank2: Steel
+    rank3: Gold
+    rank4: Diamond
+
+# Messages configuration includes Placeholders
+# Placeholders:
+#    - $player = The joining/leaving player.
+#    - $amount = The amount of Tokens to give the user upon first join of the server
+# First Join - Required, The message displayed when a player joins the server for the first time.
+# CommandPrefix - Required, A custom prefix for your server.
+Messages:
+    First-Join: &eWelcome to CubeBeaters $player! Here is $amount CBTokens to get you started with our reward system.
+    CommandPrefix: '&6[&9CB&2Tokens&6]&f '
+    
+# Daily Tokens to be given when a Player joins the server #
+# Supports up to five(5) ranks all with their own permission nodes.
+# Cooldown is measured in seconds. EX: 86400 seconds == 1 day.
+# NOTE: Do not change any values below zero(0). I think you know what that will do.
+DailyTokens:
+    cooldown: 86400
+    default: 1
+    rank1: 2
+    rank2: 5
+    rank3: 50
+    rank4: 100
+    rank5: 500
+    operator: 1000
+    firstjoin: 5
+    
+# The Cost for Xp Levels
+# Amount - The number of XP levels to give to the purchaser.
+# Cost - The cost to the purchaser for the given levels
+ExpCost:
+    amount1: 10
+    cost1: 5
+    amount2: 20
+    cost2: 10
+    amount3: 30
+    cost3: 15
+    amount4: 40
+    cost4: 20
+    amount5: 50
+    cost5: 25
+    amount6: 60
+    cost6: 30
+    amount7: 70
+    cost7: 35
+    amount8: 80
+    cost8: 40
+    amount9: 90
+    cost9: 45
+
+########################
+# Ability Shop Options #
+########################
+# This plugin supports up to 9 Abilities/Custom permissions. If you want to only use say 8 of them, simply delete the name of one of the abilities
+# Name - The name of the customPerm/Ability.
+# Cost - The Token cost to attain the Perm
+# Perm - The permission node to be given to the player upon purchase.
+Abilities:
+    ability1:
+        name: Fly
+        cost: 75
+        perm: essentials.fly
+    ability2:
+        name: Nick
+        cost: 25
+        perm: essentials.nick
+    ability3:
+        name: Hat
+        cost: 15
+        perm: essentials.hat
+    ability4:
+        name: Workbench
+        cost: 15
+        perm: 15
+    ability5:
+        name: ColouredText
+        cost: 20
+        perm: essentials.chat.color
+    ability6:
+        name: Enderchest
+        cost: 15
+        perm: essentials.enderchest
+    ability7:
+        name: Heal
+        cost: 45
+        perm: essentials.heal
+    ability8:
+        name: Feed
+        cost: 25
+        perm: essentials.feed
+    ability9:
+        name: FlySpeed
+        cost: 10
+        perm: essentials.speed.fly

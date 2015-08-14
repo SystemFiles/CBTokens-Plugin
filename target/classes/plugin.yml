@@ -1,0 +1,31 @@
+name: CBTokens
+main: net.cubebeaters.CBTokens
+version: 3.1.5
+author: Systemx86
+depend: [Vault]
+commands:
+    CBTokens:
+        description: Displays all the relivent information about the CBTokens plugin.
+        usage: &c Incorrect command usage. The correct usage is /CBTokens
+    CBStore:
+        description: Opens the GUI Store for purchasing In-Game upgrades with Tokens. Now includes organized sections with Ability Store!
+        permission: cbtokens.gui
+        usage: &c Incorrect command usage. The correct usage is /CBStore
+    CBReload:
+        description: Reloads the current config.yml file.
+        usage: &c Incorrect command usage. The correct usage is /CBReload
+    CBBal:
+        description: Displays to the player thier current CB Token balance.
+        permission: cbtokens.balance
+        usage: &c Incorrect command usage. The correct usage is /CBBal
+    CBGive:
+        description: Command run by the console, gives a specified user x amount of Tokens
+        usage: &c Incorrect command usage. The correct usage is /CBGive <Player> <Amount>
+    CBPay:
+        description: Sends a specified amount of Tokens to a specified player.
+        permission: cbtokens.pay
+        usage: &c Incorrect command usage. The correct usage is /CBPay <Player> <Amount>
+    CBCool:
+        description: Shows the current cooldown time until you can claim your next set of daily Tokens.
+        permission: cbtokens.cool
+        usage: &c Incorrect command usage. The correct usage is /CBCool
