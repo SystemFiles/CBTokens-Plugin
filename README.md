@@ -23,7 +23,7 @@ Commands & Their Permission Nodes:
     + /CBcool - Displays the current time until the next Token is available to be claimed (cbtokens.cool)
     
     **Notice**
-    This Plugin is liscensed under the Apache 2.0 Liscense and if modified, the modifier is to follow all terms set out by this Liscense and to Follow the extra terms below.
+    This Plugin is liscensed under the Creative Commons Attribution-NonCommercial 4.0 International Public License and if modified, the modifier is to follow all terms set out by this Liscense and to Follow the extra terms below.
     
       + You are not to Redestribute this plugin
       + You are not to Sell this plugin
